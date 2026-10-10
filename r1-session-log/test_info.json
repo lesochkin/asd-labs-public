@@ -1,0 +1,6 @@
+{
+    "gen": "r1-session-log/gen_overlap.py",
+    "in_path": "myfile.in",
+    "out_path": "mylogs.out",
+    "stamps":["42","--timestamps"]
+}

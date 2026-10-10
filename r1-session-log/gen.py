@@ -29,6 +29,9 @@ def main():
             out.append(f"LOGIN {name}")
     while stack:
         out.append(f"LOGOUT {stack.pop()}")
+    with open(sys.argv[1], "w+", encoding="utf-8") as file:
+        for x in range(len(out)):
+            file.write(out[x]+'\n')
     sys.stdout.write("\n".join(out) + "\n")
 
 if __name__ == "__main__":
